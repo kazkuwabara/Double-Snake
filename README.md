@@ -1,5 +1,4 @@
 # Double-Snake
-Two snakes playing chase on an empty 2-d grid
 This is an implementation of a twist on the classic snake game: the food is not static, and there are two snakes. the food for each snake is on the body of the other snake(one snake's head
 and the other's tail), and both employ a graph search AI to get to their goals.
 

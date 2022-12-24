@@ -204,16 +204,16 @@ void Ctrl::drawGridContent() const {
                     C::writeWithColor("  ", ConsoleColor(BLACK, BLACK));
                     break;
                 case Pt::Type::WALL:
-                    C::writeWithColor("  ", ConsoleColor(WHITE, WHITE, true, true));
+                    C::writeWithColor(CYAN, CYAN, true, true));
                     break;
                 case Pt::Type::FOOD:
-                    C::writeWithColor("  ", ConsoleColor(BLUE, BLUE, true, true));
-                    break;
-                case Pt::Type::hebi_HEAD:
                     C::writeWithColor("  ", ConsoleColor(RED, RED, true, true));
                     break;
+                case Pt::Type::hebi_HEAD:
+                    C::writeWithColor("  ", ConsoleColor(BLUE, BLUE, true, true));
+                    break;
                 case Pt::Type::hebi_BODY:
-                    C::writeWithColor("  ", ConsoleColor(GREEN, GREEN, true, true));
+                    C::writeWithColor("  ", ConsoleColor(MAGENTA, MAGENTA, true, true));
                     break;
                 case Pt::Type::hebi_TAIL:
                     C::writeWithColor("  ", ConsoleColor(YELLOW, YELLOW, true, true));
